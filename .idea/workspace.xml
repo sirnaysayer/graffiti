@@ -18,7 +18,12 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="graffiti" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -95,30 +100,31 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1580762955772" />
-    <state width="1877" height="263" key="GridCell.Tab.0.bottom" timestamp="1580767402031">
+    <state width="1877" height="263" key="GridCell.Tab.0.bottom" timestamp="1580771077318">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050/1920.0.1920.1050@-1920.0.1920.1050" timestamp="1580767064108" />
-    <state width="1877" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1580767402031" />
-    <state width="1877" height="263" key="GridCell.Tab.0.center" timestamp="1580767402031">
+    <state width="1877" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1580771077318" />
+    <state width="1877" height="263" key="GridCell.Tab.0.center" timestamp="1580771077318">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="263" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050/1920.0.1920.1050@-1920.0.1920.1050" timestamp="1580767064108" />
-    <state width="1877" height="263" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1580767402031" />
-    <state width="1877" height="263" key="GridCell.Tab.0.left" timestamp="1580767402031">
+    <state width="1877" height="263" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1580771077318" />
+    <state width="1877" height="263" key="GridCell.Tab.0.left" timestamp="1580771077318">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="263" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050/1920.0.1920.1050@-1920.0.1920.1050" timestamp="1580767064108" />
-    <state width="1877" height="263" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1580767402031" />
-    <state width="1877" height="263" key="GridCell.Tab.0.right" timestamp="1580767402031">
+    <state width="1877" height="263" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1580771077318" />
+    <state width="1877" height="263" key="GridCell.Tab.0.right" timestamp="1580771077318">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="263" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050/1920.0.1920.1050@-1920.0.1920.1050" timestamp="1580767064108" />
-    <state width="1877" height="263" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1580767402031" />
-    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1580764771985">
-      <screen x="-1920" y="0" width="1920" height="1050" />
+    <state width="1877" height="263" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1580771077318" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1580770054204">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1050/-1920.0.1920.1050/1920.0.1920.1050@-1920.0.1920.1050" timestamp="1580764771985" />
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1050/-1920.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1580770054204" />
     <state x="462" y="168" width="997" height="714" key="SettingsEditor" timestamp="1580767710748">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

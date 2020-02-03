@@ -2,9 +2,10 @@
 
 {{define "body"}}
     <div class="container">
+        <ul>
         {{range .}}
-            {{.Activity}}
-            {{.Status}}
+            <li>{{.Activity}} - {{.State}}</li>
         {{end}}
+        </ul>
     </div>
 {{end}}

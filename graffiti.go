@@ -10,6 +10,7 @@ import (
 	"html/template"
 	"log"
 	"net/http"
+	"os"
 	"path/filepath"
 	"time"
 )
@@ -25,8 +26,11 @@ func main() {
 	}
 	defer client.Close()
 	ctx = context.Background()
-	if err = client.Schema.Create(ctx); err != nil {
-		log.Fatalf("failed creating schema resources: %v", err)
+
+	if _, err := os.Stat("graffiti.db"); os.IsNotExist(err) {
+		if err = client.Schema.Create(ctx); err != nil {
+			log.Fatalf("failed creating schema resources: %v", err)
+		}
 	}
 
 	r := chi.NewRouter()
@@ -63,7 +67,9 @@ func todoPage(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 
-	tmpl.ExecuteTemplate(w, "base", tasks)
+	if err := tmpl.ExecuteTemplate(w, "base", tasks); err != nil {
+		log.Println("err:", err)
+	}
 }
 
 func CreateTask(ctx context.Context, client *ent.Client, activity string) (*ent.Task, error) {
