@@ -43,7 +43,7 @@ func main() {
 	r.Use(middleware.Timeout(60 * time.Second))
 
 	r.Get("/", todoPage)
-	//r.Post("/", postTodoPage)
+	r.Post("/", postTodoPage)
 
 	fmt.Println("Now serving on http://127.0.0.1:8000")
 	http.ListenAndServe(":8000", r)
@@ -60,7 +60,33 @@ func todoPage(w http.ResponseWriter, r *http.Request) {
 		log.Println(err.Error())
 	}
 
-	CreateTask(ctx, client, "Test")
+	tasks, err := QueryTasks(ctx, client)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	if err := tmpl.ExecuteTemplate(w, "base", tasks); err != nil {
+		log.Println("err:", err)
+	}
+}
+
+func postTodoPage(w http.ResponseWriter, r *http.Request) {
+	if err := r.ParseForm(); err != nil {
+		fmt.Fprintf(w, "ParseForm() err: %v", err)
+		return
+	}
+	activity := r.FormValue("activity")
+	CreateTask(ctx, client, activity)
+
+	paths := []string{
+		filepath.Join("templates", "base.gohtml"),
+		filepath.Join("templates", "todopage.gohtml"),
+	}
+
+	tmpl, err := template.ParseFiles(paths...)
+	if err != nil {
+		log.Println(err.Error())
+	}
 
 	tasks, err := QueryTasks(ctx, client)
 	if err != nil {
